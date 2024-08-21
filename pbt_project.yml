@@ -27,6 +27,21 @@ pipelines:
       - datasets/enriched_accounts
     subgraphs: []
     dependencies: {}
+  pipelines/Sources_Walkthrough:
+    name: Sources_Walkthrough
+    description: ''
+    author: somya.thatoi@teksystemsindia.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-08-13 13:23:27'
+    datasets:
+      inputs:
+      - datasets/raw_product_line_a
+      - datasets/raw_product_line_b
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/enriched_accounts:
     name: enriched_accounts
@@ -41,6 +56,32 @@ datasets:
         description: ''
         author: somya.thatoi@teksystemsindia.com
         createdAt: '2024-08-11 19:03:29'
+  datasets/raw_product_line_a:
+    name: raw_product_line_a
+    description: ''
+    author: somya.thatoi@teksystemsindia.com
+    createdAt: '2024-08-13 13:45:08'
+    mode: batch
+    physicalDatasets:
+      workshop-fabric:
+        fabricId: 14836
+        datasetType: File
+        description: ''
+        author: somya.thatoi@teksystemsindia.com
+        createdAt: '2024-08-13 13:45:08'
+  datasets/raw_product_line_b:
+    name: raw_product_line_b
+    description: ''
+    author: somya.thatoi@teksystemsindia.com
+    createdAt: '2024-08-13 13:52:53'
+    mode: batch
+    physicalDatasets:
+      workshop-fabric:
+        fabricId: 14836
+        datasetType: File
+        description: ''
+        author: somya.thatoi@teksystemsindia.com
+        createdAt: '2024-08-13 13:52:53'
 templates: {}
 jobs:
   jobs/daily_account:
@@ -64,7 +105,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2024-08-11 19:12:36'
     author: somya.thatoi@teksystemsindia.com
     models: []
@@ -91,18 +132,18 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2024-08-11T18:14:11.077659Z'
+- type: plibMaven
+  modifiedAt: '2024-08-21T03:10:29.470705Z'
   name: plibMaven
-  version: 8.0.29
-  id: '54306794'
-  createdAt: '2024-08-11T18:14:11.077659Z'
-  type: plibMaven
-- modifiedAt: '2024-08-11T18:14:11.077659Z'
+  version: 8.0.31
+  id: '841279943'
+  createdAt: '2024-08-21T03:10:29.470668Z'
+- type: plibPypi
+  modifiedAt: '2024-08-21T03:10:29.470771Z'
   name: plibPypi
   version: 1.9.9
-  id: '204250729'
-  createdAt: '2024-08-11T18:14:11.077659Z'
-  type: plibPypi
+  id: '1379293636'
+  createdAt: '2024-08-21T03:10:29.470761Z'
 projectDependencies:
   '12654':
     projectUID: 12654

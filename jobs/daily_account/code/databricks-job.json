@@ -63,7 +63,7 @@
       },
       "libraries" : [ {
         "maven" : {
-          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.29"
+          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.31"
         }
       }, {
         "pypi" : {
@@ -79,7 +79,7 @@
     "schedule" : {
       "quartz_cron_expression" : "0 0 0 * * ? *",
       "timezone_id" : "UTC",
-      "pause_status" : "UNPAUSED"
+      "pause_status" : "PAUSED"
     }
   },
   "cluster_mode" : {

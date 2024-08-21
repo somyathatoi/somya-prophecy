@@ -1,0 +1,53 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: _corrupt_record
+    type: string
+    nullable: true
+    metadata:
+      description: Records that could not be processed due to errors
+      mappings: []
+      tags: []
+  - name: date_introduced
+    type: string
+    nullable: true
+    metadata:
+      description: The date when the product was introduced to the market
+      mappings: []
+      tags: []
+  - name: main_category
+    type: string
+    nullable: true
+    metadata:
+      description: The primary category under which the product is classified
+      mappings: []
+      tags: []
+  - name: name
+    type: string
+    nullable: true
+    metadata:
+      description: The name of the product
+      mappings: []
+      tags: []
+  - name: price_usd_cents
+    type: string
+    nullable: true
+    metadata:
+      description: Price of the product in USD, expressed in cents
+      mappings: []
+      tags: []
+  - name: product_id
+    type: long
+    nullable: true
+    metadata:
+      description: Unique identifier for each product
+      mappings: []
+      tags: []
+  - name: sub_category
+    type: string
+    nullable: true
+    metadata:
+      description: The specific sub-category under which the product is classified
+      mappings: []
+      tags: []
